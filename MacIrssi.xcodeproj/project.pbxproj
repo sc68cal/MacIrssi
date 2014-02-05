@@ -44,6 +44,14 @@
 		A07C52B6189EFF0D00BED081 /* Defaults.m in Sources */ = {isa = PBXBuildFile; fileRef = A07C52B4189EFF0D00BED081 /* Defaults.m */; };
 		A07C52BB189F195D00BED081 /* PixelValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = A07C52B9189F195D00BED081 /* PixelValueTransformer.h */; };
 		A07C52BC189F195D00BED081 /* PixelValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A07C52BA189F195D00BED081 /* PixelValueTransformer.m */; };
+		A0C9B29718A1BACC00B23004 /* ChromiumTabs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A08F22C118A1B3510093F6E7 /* ChromiumTabs.framework */; };
+		A0C9B29E18A1BEEB00B23004 /* WeirdCrap.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C9B29C18A1BEEB00B23004 /* WeirdCrap.h */; };
+		A0C9B29F18A1BEEB00B23004 /* WeirdCrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0C9B29D18A1BEEB00B23004 /* WeirdCrap.mm */; };
+		A0C9B2A018A1BF8000B23004 /* ChromiumTabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08F22C118A1B3510093F6E7 /* ChromiumTabs.framework */; };
+		A0C9B2AF18A1C91B00B23004 /* MyBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C9B2AB18A1C91B00B23004 /* MyBrowser.h */; };
+		A0C9B2B018A1C91B00B23004 /* MyBrowser.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0C9B2AC18A1C91B00B23004 /* MyBrowser.mm */; };
+		A0C9B2B118A1C91B00B23004 /* MyTabContents.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C9B2AD18A1C91B00B23004 /* MyTabContents.h */; };
+		A0C9B2B218A1C91B00B23004 /* MyTabContents.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0C9B2AE18A1C91B00B23004 /* MyTabContents.mm */; };
 		B322DD9A05EF9A7100E640C2 /* IrssiInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = B322DD9505EF9A7100E640C2 /* IrssiInternal.h */; };
 		B322DD9B05EF9A7100E640C2 /* IrssiInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = B322DD9605EF9A7100E640C2 /* IrssiInternal.m */; };
 		B322DDA905EF9AB300E640C2 /* AppController.h in Headers */ = {isa = PBXBuildFile; fileRef = B322DD9F05EF9AB300E640C2 /* AppController.h */; };
@@ -613,6 +621,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A08F22C018A1B3510093F6E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08F22BB18A1B3510093F6E7 /* chromium-tabs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A3ED9831225E27E009E2908;
+			remoteInfo = ChromiumTabs;
+		};
+		A08F22C218A1B3510093F6E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08F22BB18A1B3510093F6E7 /* chromium-tabs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090;
+			remoteInfo = "Chromium Tabs";
+		};
+		A08F22C718A1B7350093F6E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08F22BB18A1B3510093F6E7 /* chromium-tabs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A3ED9821225E27E009E2908;
+			remoteInfo = ChromiumTabs;
+		};
 		C95430C81305AEEF00C19A0C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -665,6 +694,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A0C9B29618A1BABD00B23004 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Frameworks;
+			dstSubfolderSpec = 16;
+			files = (
+				A0C9B29718A1BACC00B23004 /* ChromiumTabs.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B322D70305EF930400E640C2 /* Copy Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1035,6 +1074,13 @@
 		A07C52B4189EFF0D00BED081 /* Defaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Defaults.m; sourceTree = "<group>"; };
 		A07C52B9189F195D00BED081 /* PixelValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixelValueTransformer.h; sourceTree = "<group>"; };
 		A07C52BA189F195D00BED081 /* PixelValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PixelValueTransformer.m; sourceTree = "<group>"; };
+		A08F22BB18A1B3510093F6E7 /* chromium-tabs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "chromium-tabs.xcodeproj"; path = "chromium-tabs/chromium-tabs.xcodeproj"; sourceTree = "<group>"; };
+		A0C9B29C18A1BEEB00B23004 /* WeirdCrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeirdCrap.h; path = Controllers/WeirdCrap.h; sourceTree = "<group>"; };
+		A0C9B29D18A1BEEB00B23004 /* WeirdCrap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WeirdCrap.mm; path = Controllers/WeirdCrap.mm; sourceTree = "<group>"; };
+		A0C9B2AB18A1C91B00B23004 /* MyBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBrowser.h; sourceTree = "<group>"; };
+		A0C9B2AC18A1C91B00B23004 /* MyBrowser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyBrowser.mm; sourceTree = "<group>"; };
+		A0C9B2AD18A1C91B00B23004 /* MyTabContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabContents.h; sourceTree = "<group>"; };
+		A0C9B2AE18A1C91B00B23004 /* MyTabContents.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyTabContents.mm; sourceTree = "<group>"; };
 		B322DD9505EF9A7100E640C2 /* IrssiInternal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IrssiInternal.h; sourceTree = "<group>"; };
 		B322DD9605EF9A7100E640C2 /* IrssiInternal.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = IrssiInternal.m; sourceTree = "<group>"; };
 		B322DD9F05EF9AB300E640C2 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = Controllers/AppController.h; sourceTree = "<group>"; usesTabs = 1; };
@@ -1870,6 +1916,7 @@
 				C91026770E5C665B00E041F7 /* AddressBook.framework in Frameworks */,
 				C9667E030E3790FD00014B02 /* SystemConfiguration.framework in Frameworks */,
 				C91F139E0F0A743800763699 /* Sparkle.framework in Frameworks */,
+				A0C9B2A018A1BF8000B23004 /* ChromiumTabs.framework in Frameworks */,
 				C9AA5DE613062A3A00C87B25 /* Security.framework in Frameworks */,
 				C91F15580F110B6500763699 /* Carbon.framework in Frameworks */,
 				C9FBBC3F1049A5A700FE4ACD /* GoogleToolboxForMac.framework in Frameworks */,
@@ -1895,6 +1942,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A0C9B2A218A1C80400B23004 /* ChromiumTabs */,
 				C91026570E5C652000E041F7 /* UKCrashReporter */,
 				C9E1B1B712F001E1004E75B0 /* Irssi Chaff */,
 				B322DD9205EF9A5C00E640C2 /* Irssi Bridge */,
@@ -1991,6 +2039,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A08F22BB18A1B3510093F6E7 /* chromium-tabs.xcodeproj */,
 				C91792C90F743801005241A4 /* MILibs.xcodeproj */,
 				C2CC3B000C09F404001C0DDD /* Frameworks */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
@@ -2006,6 +2055,28 @@
 				A07C52BA189F195D00BED081 /* PixelValueTransformer.m */,
 			);
 			name = "Value Tansformers";
+			sourceTree = "<group>";
+		};
+		A08F22BC18A1B3510093F6E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A08F22C118A1B3510093F6E7 /* ChromiumTabs.framework */,
+				A08F22C318A1B3510093F6E7 /* Chromium Tabs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0C9B2A218A1C80400B23004 /* ChromiumTabs */ = {
+			isa = PBXGroup;
+			children = (
+				A0C9B2AB18A1C91B00B23004 /* MyBrowser.h */,
+				A0C9B2AC18A1C91B00B23004 /* MyBrowser.mm */,
+				A0C9B2AD18A1C91B00B23004 /* MyTabContents.h */,
+				A0C9B2AE18A1C91B00B23004 /* MyTabContents.mm */,
+				A0C9B29C18A1BEEB00B23004 /* WeirdCrap.h */,
+				A0C9B29D18A1BEEB00B23004 /* WeirdCrap.mm */,
+			);
+			name = ChromiumTabs;
 			sourceTree = "<group>";
 		};
 		B322DD9205EF9A5C00E640C2 /* Irssi Bridge */ = {
@@ -3288,6 +3359,7 @@
 				B322DD9A05EF9A7100E640C2 /* IrssiInternal.h in Headers */,
 				B322DDA905EF9AB300E640C2 /* AppController.h in Headers */,
 				B322DDAC05EF9AB300E640C2 /* ChannelController.h in Headers */,
+				A0C9B2B118A1C91B00B23004 /* MyTabContents.h in Headers */,
 				B322DDB105EF9AB300E640C2 /* PreferenceViewController.h in Headers */,
 				B322DDC705EF9AE600E640C2 /* ColorSet.h in Headers */,
 				B322DDC905EF9AE600E640C2 /* CustomTableView.h in Headers */,
@@ -3321,6 +3393,7 @@
 				C9B90D020F8CE99000A5D0C4 /* AIMenuAdditions.h in Headers */,
 				C9B90D460F8CEF0500A5D0C4 /* NSString+Additions.h in Headers */,
 				C98E5F46104BF3830004C8F0 /* JVFontPreviewField.h in Headers */,
+				A0C9B2AF18A1C91B00B23004 /* MyBrowser.h in Headers */,
 				C9B9980010B83BD40093A1BB /* MIUnresponsiveButton.h in Headers */,
 				C9854DCD10D035B5004163C1 /* MIResizingTextView.h in Headers */,
 				C9BB213E1299D3A400EA8AB0 /* DebugController.h in Headers */,
@@ -3334,6 +3407,7 @@
 				C90301BF129DEA5000B30679 /* PreferenceVersionHelper.h in Headers */,
 				C90C9E8212A06196009F43CE /* MISearchBar.h in Headers */,
 				C90CA25B12A0CDD9009F43CE /* MIChannelSearchController.h in Headers */,
+				A0C9B29E18A1BEEB00B23004 /* WeirdCrap.h in Headers */,
 				C9C9415712E9F0FE00A4D7A5 /* iTunesBridge.h in Headers */,
 				C9E1B3D012F019F8004E75B0 /* default-config.h in Headers */,
 				C9E1B3D112F019F8004E75B0 /* default-theme.h in Headers */,
@@ -3358,6 +3432,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C209D3A808BF5CE6009C9E21 /* Build configuration list for PBXNativeTarget "MacIrssi" */;
 			buildPhases = (
+				A0C9B29618A1BABD00B23004 /* CopyFiles */,
 				8D1107270486CEB800E47090 /* Headers */,
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
@@ -3375,6 +3450,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A08F22C818A1B7350093F6E7 /* PBXTargetDependency */,
 				C9E1AEE212EFFEAF004E75B0 /* PBXTargetDependency */,
 			);
 			name = MacIrssi;
@@ -3425,6 +3501,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = A08F22BC18A1B3510093F6E7 /* Products */;
+					ProjectRef = A08F22BB18A1B3510093F6E7 /* chromium-tabs.xcodeproj */;
+				},
+				{
 					ProductGroup = C91792CA0F743801005241A4 /* Products */;
 					ProjectRef = C91792C90F743801005241A4 /* MILibs.xcodeproj */;
 				},
@@ -3440,6 +3520,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		A08F22C118A1B3510093F6E7 /* ChromiumTabs.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChromiumTabs.framework;
+			remoteRef = A08F22C018A1B3510093F6E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A08F22C318A1B3510093F6E7 /* Chromium Tabs.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Chromium Tabs.app";
+			remoteRef = A08F22C218A1B3510093F6E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		C9C762AB12EFD5850072D1E8 /* GLib.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -3593,6 +3687,7 @@
 				C91026650E5C654800E041F7 /* UKCrashReporter.m in Sources */,
 				C91026670E5C654800E041F7 /* UKSystemInfo.m in Sources */,
 				C91026690E5C654800E041F7 /* UKNibOwner.m in Sources */,
+				A0C9B2B218A1C91B00B23004 /* MyTabContents.mm in Sources */,
 				C9EBA8A60E9FF5EE00025466 /* PreferenceObjectController.m in Sources */,
 				C9EBAB710EA0AF7600025466 /* IrcnetBridgeController.m in Sources */,
 				C9EBACAC0EA100D400025466 /* ServerBridgeController.m in Sources */,
@@ -3605,12 +3700,14 @@
 				C91F15290F110A8600763699 /* SRRecorderCell.m in Sources */,
 				C91F152B0F110A8600763699 /* SRRecorderControl.m in Sources */,
 				C91F152D0F110A8600763699 /* SRValidator.m in Sources */,
+				A0C9B2B018A1C91B00B23004 /* MyBrowser.mm in Sources */,
 				C91F168C0F12937B00763699 /* ShortcutBridgeController.m in Sources */,
 				C91F194F0F14025D00763699 /* iTunes.m in Sources */,
 				C9B90D030F8CE99000A5D0C4 /* AIMenuAdditions.m in Sources */,
 				C9B90D470F8CEF0500A5D0C4 /* NSString+Additions.m in Sources */,
 				C98E5F47104BF3830004C8F0 /* JVFontPreviewField.m in Sources */,
 				C9B9980110B83BD40093A1BB /* MIUnresponsiveButton.m in Sources */,
+				A0C9B29F18A1BEEB00B23004 /* WeirdCrap.mm in Sources */,
 				C9854DCE10D035B5004163C1 /* MIResizingTextView.m in Sources */,
 				24FEBD7911CA70A30067C8D6 /* IrssiCore.m in Sources */,
 				C9BB213F1299D3A400EA8AB0 /* DebugController.m in Sources */,
@@ -3782,6 +3879,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A08F22C818A1B7350093F6E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChromiumTabs;
+			targetProxy = A08F22C718A1B7350093F6E7 /* PBXContainerItemProxy */;
+		};
 		C95430C91305AEEF00C19A0C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C95430BC1305AE8700C19A0C /* Copy GLib */;
@@ -3873,6 +3975,7 @@
 					"Frameworks/*.framework",
 					"$(BUILT_PRODUCTS_DIR)/Frameworks/GLib.framework/Headers",
 					"$(SRCROOT)/Headers",
+					"$(BUILT_PRODUCTS_DIR)/Frameworks/ChromiumTabs.framework/Headers",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -3912,6 +4015,7 @@
 					"Frameworks/*.framework",
 					"$(BUILT_PRODUCTS_DIR)/Frameworks/GLib.framework/Headers",
 					"$(SRCROOT)/Headers",
+					"$(BUILT_PRODUCTS_DIR)/Frameworks/ChromiumTabs.framework/Headers",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";

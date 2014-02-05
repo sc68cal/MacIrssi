@@ -20,6 +20,8 @@
 #import <Growl/GrowlApplicationBridge.h>
 #import <objc/objc-runtime.h>
 
+
+
 #import "AppController.h"
 #import "ChannelController.h"
 #import "PreferenceViewController.h"
@@ -34,6 +36,7 @@
 #import "IrssiRunloop.h"
 #import "PreferenceVersionHelper.h"
 #import "Defaults.h"
+#import "WeirdCrap.h"
 
 #import "AIMenuAdditions.h"
 #import "NSString+Additions.h"
@@ -1617,7 +1620,9 @@ static char *kMIJoinChannelAlertKey = "kMIJoinChannelAlertKey";
   UKCrashReporterCheckForCrash();
   
   NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-  
+
+    [WeirdCrap doStuff];
+
   setRefToAppController(self);
   highlightAttributes = [[NSMutableDictionary alloc] init];
   
