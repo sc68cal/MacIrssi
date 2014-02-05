@@ -40,18 +40,21 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A049570018A2F5C1005E7666 /* MainInterface.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04956FF18A2F5C1005E7666 /* MainInterface.xib */; };
+		A049570918A2F6BC005E7666 /* MyBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = A049570318A2F6BC005E7666 /* MyBrowser.h */; };
+		A049570A18A2F6BC005E7666 /* MyBrowser.mm in Sources */ = {isa = PBXBuildFile; fileRef = A049570418A2F6BC005E7666 /* MyBrowser.mm */; };
+		A049570B18A2F6BC005E7666 /* MyTabContents.h in Headers */ = {isa = PBXBuildFile; fileRef = A049570518A2F6BC005E7666 /* MyTabContents.h */; };
+		A049570C18A2F6BC005E7666 /* MyTabContents.mm in Sources */ = {isa = PBXBuildFile; fileRef = A049570618A2F6BC005E7666 /* MyTabContents.mm */; };
+		A049570D18A2F6BC005E7666 /* WeirdCrap.h in Headers */ = {isa = PBXBuildFile; fileRef = A049570718A2F6BC005E7666 /* WeirdCrap.h */; };
+		A049570E18A2F6BC005E7666 /* WeirdCrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = A049570818A2F6BC005E7666 /* WeirdCrap.mm */; };
+		A049571118A2F6D3005E7666 /* MainInterfaceView.h in Headers */ = {isa = PBXBuildFile; fileRef = A049570F18A2F6D3005E7666 /* MainInterfaceView.h */; };
+		A049571218A2F6D3005E7666 /* MainInterfaceView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A049571018A2F6D3005E7666 /* MainInterfaceView.mm */; };
 		A07C52B5189EFF0D00BED081 /* Defaults.h in Headers */ = {isa = PBXBuildFile; fileRef = A07C52B3189EFF0D00BED081 /* Defaults.h */; };
 		A07C52B6189EFF0D00BED081 /* Defaults.m in Sources */ = {isa = PBXBuildFile; fileRef = A07C52B4189EFF0D00BED081 /* Defaults.m */; };
 		A07C52BB189F195D00BED081 /* PixelValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = A07C52B9189F195D00BED081 /* PixelValueTransformer.h */; };
 		A07C52BC189F195D00BED081 /* PixelValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A07C52BA189F195D00BED081 /* PixelValueTransformer.m */; };
 		A0C9B29718A1BACC00B23004 /* ChromiumTabs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A08F22C118A1B3510093F6E7 /* ChromiumTabs.framework */; };
-		A0C9B29E18A1BEEB00B23004 /* WeirdCrap.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C9B29C18A1BEEB00B23004 /* WeirdCrap.h */; };
-		A0C9B29F18A1BEEB00B23004 /* WeirdCrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0C9B29D18A1BEEB00B23004 /* WeirdCrap.mm */; };
 		A0C9B2A018A1BF8000B23004 /* ChromiumTabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08F22C118A1B3510093F6E7 /* ChromiumTabs.framework */; };
-		A0C9B2AF18A1C91B00B23004 /* MyBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C9B2AB18A1C91B00B23004 /* MyBrowser.h */; };
-		A0C9B2B018A1C91B00B23004 /* MyBrowser.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0C9B2AC18A1C91B00B23004 /* MyBrowser.mm */; };
-		A0C9B2B118A1C91B00B23004 /* MyTabContents.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C9B2AD18A1C91B00B23004 /* MyTabContents.h */; };
-		A0C9B2B218A1C91B00B23004 /* MyTabContents.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0C9B2AE18A1C91B00B23004 /* MyTabContents.mm */; };
 		B322DD9A05EF9A7100E640C2 /* IrssiInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = B322DD9505EF9A7100E640C2 /* IrssiInternal.h */; };
 		B322DD9B05EF9A7100E640C2 /* IrssiInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = B322DD9605EF9A7100E640C2 /* IrssiInternal.m */; };
 		B322DDA905EF9AB300E640C2 /* AppController.h in Headers */ = {isa = PBXBuildFile; fileRef = B322DD9F05EF9AB300E640C2 /* AppController.h */; };
@@ -1070,17 +1073,20 @@
 		32CA4F630368D1EE00C91783 /* MacIrssi_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacIrssi_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* MacIrssi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacIrssi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04956FF18A2F5C1005E7666 /* MainInterface.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainInterface.xib; sourceTree = "<group>"; };
+		A049570318A2F6BC005E7666 /* MyBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyBrowser.h; path = ChromiumTabs/MyBrowser.h; sourceTree = "<group>"; };
+		A049570418A2F6BC005E7666 /* MyBrowser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MyBrowser.mm; path = ChromiumTabs/MyBrowser.mm; sourceTree = "<group>"; };
+		A049570518A2F6BC005E7666 /* MyTabContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTabContents.h; path = ChromiumTabs/MyTabContents.h; sourceTree = "<group>"; };
+		A049570618A2F6BC005E7666 /* MyTabContents.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MyTabContents.mm; path = ChromiumTabs/MyTabContents.mm; sourceTree = "<group>"; };
+		A049570718A2F6BC005E7666 /* WeirdCrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeirdCrap.h; path = ChromiumTabs/WeirdCrap.h; sourceTree = "<group>"; };
+		A049570818A2F6BC005E7666 /* WeirdCrap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WeirdCrap.mm; path = ChromiumTabs/WeirdCrap.mm; sourceTree = "<group>"; };
+		A049570F18A2F6D3005E7666 /* MainInterfaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainInterfaceView.h; path = ChromiumTabs/MainInterfaceView.h; sourceTree = "<group>"; };
+		A049571018A2F6D3005E7666 /* MainInterfaceView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MainInterfaceView.mm; path = ChromiumTabs/MainInterfaceView.mm; sourceTree = "<group>"; };
 		A07C52B3189EFF0D00BED081 /* Defaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defaults.h; sourceTree = "<group>"; };
 		A07C52B4189EFF0D00BED081 /* Defaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Defaults.m; sourceTree = "<group>"; };
 		A07C52B9189F195D00BED081 /* PixelValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixelValueTransformer.h; sourceTree = "<group>"; };
 		A07C52BA189F195D00BED081 /* PixelValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PixelValueTransformer.m; sourceTree = "<group>"; };
 		A08F22BB18A1B3510093F6E7 /* chromium-tabs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "chromium-tabs.xcodeproj"; path = "chromium-tabs/chromium-tabs.xcodeproj"; sourceTree = "<group>"; };
-		A0C9B29C18A1BEEB00B23004 /* WeirdCrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeirdCrap.h; path = Controllers/WeirdCrap.h; sourceTree = "<group>"; };
-		A0C9B29D18A1BEEB00B23004 /* WeirdCrap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WeirdCrap.mm; path = Controllers/WeirdCrap.mm; sourceTree = "<group>"; };
-		A0C9B2AB18A1C91B00B23004 /* MyBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBrowser.h; sourceTree = "<group>"; };
-		A0C9B2AC18A1C91B00B23004 /* MyBrowser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyBrowser.mm; sourceTree = "<group>"; };
-		A0C9B2AD18A1C91B00B23004 /* MyTabContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabContents.h; sourceTree = "<group>"; };
-		A0C9B2AE18A1C91B00B23004 /* MyTabContents.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyTabContents.mm; sourceTree = "<group>"; };
 		B322DD9505EF9A7100E640C2 /* IrssiInternal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IrssiInternal.h; sourceTree = "<group>"; };
 		B322DD9605EF9A7100E640C2 /* IrssiInternal.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = IrssiInternal.m; sourceTree = "<group>"; };
 		B322DD9F05EF9AB300E640C2 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = Controllers/AppController.h; sourceTree = "<group>"; usesTabs = 1; };
@@ -2032,6 +2038,7 @@
 				C911226C0F2B235E006C4BD0 /* MainMenu.xib */,
 				C91122860F2B2431006C4BD0 /* Preferences.xib */,
 				C91122880F2B2431006C4BD0 /* Tab new.xib */,
+				A04956FF18A2F5C1005E7666 /* MainInterface.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -2069,12 +2076,14 @@
 		A0C9B2A218A1C80400B23004 /* ChromiumTabs */ = {
 			isa = PBXGroup;
 			children = (
-				A0C9B2AB18A1C91B00B23004 /* MyBrowser.h */,
-				A0C9B2AC18A1C91B00B23004 /* MyBrowser.mm */,
-				A0C9B2AD18A1C91B00B23004 /* MyTabContents.h */,
-				A0C9B2AE18A1C91B00B23004 /* MyTabContents.mm */,
-				A0C9B29C18A1BEEB00B23004 /* WeirdCrap.h */,
-				A0C9B29D18A1BEEB00B23004 /* WeirdCrap.mm */,
+				A049570F18A2F6D3005E7666 /* MainInterfaceView.h */,
+				A049571018A2F6D3005E7666 /* MainInterfaceView.mm */,
+				A049570318A2F6BC005E7666 /* MyBrowser.h */,
+				A049570418A2F6BC005E7666 /* MyBrowser.mm */,
+				A049570518A2F6BC005E7666 /* MyTabContents.h */,
+				A049570618A2F6BC005E7666 /* MyTabContents.mm */,
+				A049570718A2F6BC005E7666 /* WeirdCrap.h */,
+				A049570818A2F6BC005E7666 /* WeirdCrap.mm */,
 			);
 			name = ChromiumTabs;
 			sourceTree = "<group>";
@@ -3359,7 +3368,6 @@
 				B322DD9A05EF9A7100E640C2 /* IrssiInternal.h in Headers */,
 				B322DDA905EF9AB300E640C2 /* AppController.h in Headers */,
 				B322DDAC05EF9AB300E640C2 /* ChannelController.h in Headers */,
-				A0C9B2B118A1C91B00B23004 /* MyTabContents.h in Headers */,
 				B322DDB105EF9AB300E640C2 /* PreferenceViewController.h in Headers */,
 				B322DDC705EF9AE600E640C2 /* ColorSet.h in Headers */,
 				B322DDC905EF9AE600E640C2 /* CustomTableView.h in Headers */,
@@ -3378,6 +3386,7 @@
 				C9EBA8A50E9FF5EE00025466 /* PreferenceObjectController.h in Headers */,
 				C9EBAB700EA0AF7600025466 /* IrcnetBridgeController.h in Headers */,
 				C9EBACAB0EA100D400025466 /* ServerBridgeController.h in Headers */,
+				A049570B18A2F6BC005E7666 /* MyTabContents.h in Headers */,
 				C9432C250EA1673E005237E3 /* ChannelBridgeController.h in Headers */,
 				C9A3EA390EA48342005025BC /* AppcastVersionComparator.h in Headers */,
 				C91F0B170F06E3C900763699 /* MISplitView.h in Headers */,
@@ -3387,13 +3396,13 @@
 				C91F15260F110A8600763699 /* SRKeyCodeTransformer.h in Headers */,
 				C91F15280F110A8600763699 /* SRRecorderCell.h in Headers */,
 				C91F152A0F110A8600763699 /* SRRecorderControl.h in Headers */,
+				A049570918A2F6BC005E7666 /* MyBrowser.h in Headers */,
 				C91F152C0F110A8600763699 /* SRValidator.h in Headers */,
 				C91F168B0F12937B00763699 /* ShortcutBridgeController.h in Headers */,
 				C91F194E0F14025D00763699 /* iTunes.h in Headers */,
 				C9B90D020F8CE99000A5D0C4 /* AIMenuAdditions.h in Headers */,
 				C9B90D460F8CEF0500A5D0C4 /* NSString+Additions.h in Headers */,
 				C98E5F46104BF3830004C8F0 /* JVFontPreviewField.h in Headers */,
-				A0C9B2AF18A1C91B00B23004 /* MyBrowser.h in Headers */,
 				C9B9980010B83BD40093A1BB /* MIUnresponsiveButton.h in Headers */,
 				C9854DCD10D035B5004163C1 /* MIResizingTextView.h in Headers */,
 				C9BB213E1299D3A400EA8AB0 /* DebugController.h in Headers */,
@@ -3407,13 +3416,14 @@
 				C90301BF129DEA5000B30679 /* PreferenceVersionHelper.h in Headers */,
 				C90C9E8212A06196009F43CE /* MISearchBar.h in Headers */,
 				C90CA25B12A0CDD9009F43CE /* MIChannelSearchController.h in Headers */,
-				A0C9B29E18A1BEEB00B23004 /* WeirdCrap.h in Headers */,
 				C9C9415712E9F0FE00A4D7A5 /* iTunesBridge.h in Headers */,
 				C9E1B3D012F019F8004E75B0 /* default-config.h in Headers */,
+				A049571118A2F6D3005E7666 /* MainInterfaceView.h in Headers */,
 				C9E1B3D112F019F8004E75B0 /* default-theme.h in Headers */,
 				C9E1B3D212F019F8004E75B0 /* irssi-config.h in Headers */,
 				C9E1B3D312F019F8004E75B0 /* irssi-version.h in Headers */,
 				C920EDBB1303C05200CD80DA /* IrssiRunloop.h in Headers */,
+				A049570D18A2F6BC005E7666 /* WeirdCrap.h in Headers */,
 				C91264BD1304F4BA006E0AA4 /* IrssiConstants.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3579,6 +3589,7 @@
 				C91F15320F110AFC00763699 /* ShortcutRecorder.strings in Resources */,
 				C911226E0F2B235E006C4BD0 /* MainMenu.xib in Resources */,
 				C911228A0F2B2431006C4BD0 /* Preferences.xib in Resources */,
+				A049570018A2F5C1005E7666 /* MainInterface.xib in Resources */,
 				C911228B0F2B2431006C4BD0 /* Tab new.xib in Resources */,
 				C98777080F74F67300591183 /* MacIrssi.pub in Resources */,
 				C9C2829011C747CD00914872 /* package.rb in Resources */,
@@ -3678,6 +3689,7 @@
 				A07C52BC189F195D00BED081 /* PixelValueTransformer.m in Sources */,
 				B322DDCC05EF9AE600E640C2 /* CustomWindow.m in Sources */,
 				B3D0B8A705F637DB0067FD52 /* IrssiBridge.m in Sources */,
+				A049570C18A2F6BC005E7666 /* MyTabContents.mm in Sources */,
 				B3241ACC06286AF7000B4624 /* NSAttributedStringAdditions.m in Sources */,
 				C25491790681A35900C43D63 /* CustomTextView.m in Sources */,
 				C2D1679206E3E16C000EC6F9 /* ChannelBar.m in Sources */,
@@ -3687,7 +3699,6 @@
 				C91026650E5C654800E041F7 /* UKCrashReporter.m in Sources */,
 				C91026670E5C654800E041F7 /* UKSystemInfo.m in Sources */,
 				C91026690E5C654800E041F7 /* UKNibOwner.m in Sources */,
-				A0C9B2B218A1C91B00B23004 /* MyTabContents.mm in Sources */,
 				C9EBA8A60E9FF5EE00025466 /* PreferenceObjectController.m in Sources */,
 				C9EBAB710EA0AF7600025466 /* IrcnetBridgeController.m in Sources */,
 				C9EBACAC0EA100D400025466 /* ServerBridgeController.m in Sources */,
@@ -3696,19 +3707,19 @@
 				C91F0B180F06E3C900763699 /* MISplitView.m in Sources */,
 				C91F15230F110A8600763699 /* CTGradient.m in Sources */,
 				C91F15250F110A8600763699 /* SRCommon.m in Sources */,
+				A049571218A2F6D3005E7666 /* MainInterfaceView.mm in Sources */,
 				C91F15270F110A8600763699 /* SRKeyCodeTransformer.m in Sources */,
 				C91F15290F110A8600763699 /* SRRecorderCell.m in Sources */,
 				C91F152B0F110A8600763699 /* SRRecorderControl.m in Sources */,
 				C91F152D0F110A8600763699 /* SRValidator.m in Sources */,
-				A0C9B2B018A1C91B00B23004 /* MyBrowser.mm in Sources */,
 				C91F168C0F12937B00763699 /* ShortcutBridgeController.m in Sources */,
 				C91F194F0F14025D00763699 /* iTunes.m in Sources */,
 				C9B90D030F8CE99000A5D0C4 /* AIMenuAdditions.m in Sources */,
 				C9B90D470F8CEF0500A5D0C4 /* NSString+Additions.m in Sources */,
 				C98E5F47104BF3830004C8F0 /* JVFontPreviewField.m in Sources */,
 				C9B9980110B83BD40093A1BB /* MIUnresponsiveButton.m in Sources */,
-				A0C9B29F18A1BEEB00B23004 /* WeirdCrap.mm in Sources */,
 				C9854DCE10D035B5004163C1 /* MIResizingTextView.m in Sources */,
+				A049570E18A2F6BC005E7666 /* WeirdCrap.mm in Sources */,
 				24FEBD7911CA70A30067C8D6 /* IrssiCore.m in Sources */,
 				C9BB213F1299D3A400EA8AB0 /* DebugController.m in Sources */,
 				C9BB22171299E5C500EA8AB0 /* CHLayoutConstraint.m in Sources */,
@@ -3717,6 +3728,7 @@
 				C9BB227B129A013E00EA8AB0 /* MITextField.m in Sources */,
 				C9BB24BE129A520300EA8AB0 /* SRHacks.m in Sources */,
 				C9FDCE4B129DB813004598C1 /* MIScrollViewHelper.m in Sources */,
+				A049570A18A2F6BC005E7666 /* MyBrowser.mm in Sources */,
 				C90301C0129DEA5000B30679 /* PreferenceVersionHelper.m in Sources */,
 				C90C9E8312A06196009F43CE /* MISearchBar.m in Sources */,
 				C90CA25C12A0CDD9009F43CE /* MIChannelSearchController.m in Sources */,
