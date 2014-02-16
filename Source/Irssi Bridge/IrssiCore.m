@@ -205,13 +205,8 @@ void initialiseCoreOnce()
      */
     setenv("CHARSET", "UTF-8", 1);
     
-#ifdef MACIRSSI_DEBUG
-    char *irssi_argv[] = {"irssi", "--config=~/.irssi/config_debug", NULL};
-    int irssi_argc = 2;
-#else
     char *irssi_argv[] = { "irssi", NULL };
     int irssi_argc = 1;
-#endif    
     
     core_register_options();
     fe_common_core_register_options();
